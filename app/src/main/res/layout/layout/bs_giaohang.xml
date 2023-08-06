@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/giaohang"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:clipToOutline="true"
+    android:background="#F5FFFFFF"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:layout_gravity="bottom"
+    >
+    <LinearLayout
+        android:id="@+id/layout_giohang"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+        <com.nex3z.notificationbadge.NotificationBadge
+
+            android:id="@+id/menu_slmua"
+            android:layout_gravity="top|right"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imggiohang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/giohang"
+            />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/some_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center_vertical"
+            android:text="20.000đ"
+            android:textAppearance="@style/tongtien"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="10dp"
+            />
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btngiaohang"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/giohang"
+        android:background="#FD2F2F"
+        android:text="Giao hàng"
+        android:textAppearance="@style/giao_h_ng"
+        android:gravity="center"
+        />
+</RelativeLayout>

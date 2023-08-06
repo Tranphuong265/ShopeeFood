@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <RelativeLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/btnRemoveAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="Xóa tất cả"
+            android:textAppearance="@style/xoagiohang" />
+
+        <TextView
+            android:id="@+id/tieude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Giỏ hàng"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/x_gh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentRight="true"
+            android:text="X"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/listgiohang"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+
+</LinearLayout>

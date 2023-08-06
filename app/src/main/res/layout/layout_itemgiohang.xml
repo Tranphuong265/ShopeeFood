@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/imgMon_gh"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tenMon_gh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgMon_gh"
+            android:text="CHUK - Milo Núi Lửa"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/ghichu_gh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tenMon_gh"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgMon_gh"
+            android:gravity="top"
+            android:text="Đường 100%, Size M, Lượng Đá 100%"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/giaMon_gh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgMon_gh"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="20.000d"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="#C80000"
+            android:textSize="25sp"
+            />
+        <LinearLayout
+            android:id="@+id/capnhatslmua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/giaMon_gh"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="#F6F2F2">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/trusl_gh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_capnhatsl"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FD2F2F"/>
+            <TextView
+                android:id="@+id/slmua_gh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:inputType="number"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/congsl_gh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FD2F2F"
+                android:background="@drawable/btn_capnhatsl"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
